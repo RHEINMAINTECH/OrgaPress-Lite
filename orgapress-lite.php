@@ -6,6 +6,7 @@
  * Author: RheinMainTech GmbH
  * License: GPLv2 or later
  * Text Domain: orgapress-lite
+ * Plugin URI: https://orgapress.com
  */
 
 if (!defined('ABSPATH')) {
