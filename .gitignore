@@ -1,0 +1,5 @@
+*.aics
+.git/
+.mysql/
+.remote/
+.snapshots/

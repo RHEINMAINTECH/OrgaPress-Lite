@@ -1,0 +1,30 @@
+.orgapress-media-folder-tree {
+    padding: 10px;
+    border-top: 1px solid #ddd;
+    background: #f9f9f9;
+    font-size: 13px;
+}
+
+.orgapress-media-folder-tree h3 {
+margin: 0 0 8px;
+font-size: 13px;
+font-weight: 600;
+}
+
+.orgapress-folder-tree {
+list-style: none;
+margin: 0;
+padding: 0;
+}
+
+.orgapress-folder-tree li {
+padding: 4px 6px;
+margin: 2px 0;
+cursor: pointer;
+border-radius: 3px;
+}
+
+.orgapress-folder-tree li:hover {
+background: #2271b1;
+color: #fff;
+}

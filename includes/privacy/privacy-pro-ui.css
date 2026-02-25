@@ -1,0 +1,222 @@
+#orgapress-consent-modal {
+    position: fixed;
+    inset: 0;
+    z-index: 100000;
+    font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Oxygen-Sans, Ubuntu, Cantarell, "Helvetica Neue", sans-serif;
+    display: none;
+    align-items: center;
+    justify-content: center;
+    padding: 20px;
+}
+
+#orgapress-consent-modal.is-visible {
+    display: flex;
+}
+
+#orgapress-consent-banner {
+    position: fixed;
+    bottom: 20px;
+    left: 20px;
+    right: 20px;
+    background: #ffffff;
+    padding: 20px 30px;
+    border-radius: 12px;
+    box-shadow: 0 10px 25px rgba(0,0,0,0.15);
+    z-index: 99999;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    gap: 30px;
+    border: 1px solid #e2e8f0;
+}
+
+.orgapress-consent-banner-text {
+    font-size: 14px;
+    color: #475569;
+    line-height: 1.5;
+}
+
+.orgapress-consent-banner-actions {
+    display: flex;
+    gap: 12px;
+    flex-shrink: 0;
+}
+
+.orgapress-consent-backdrop {
+    position: absolute;
+    inset: 0;
+    background: rgba(15, 23, 42, 0.75);
+    backdrop-filter: blur(8px);
+}
+
+.orgapress-consent-box {
+    position: relative;
+    width: 100%;
+    max-width: 600px;
+    background: #ffffff;
+    padding: 40px;
+    border-radius: 16px;
+    box-shadow: 0 25px 50px -12px rgba(0, 0, 0, 0.25);
+    border: 1px solid rgba(255, 255, 255, 0.1);
+}
+
+#orgapress-privacy-trigger {
+    position: fixed;
+    bottom: 20px;
+    left: 20px;
+    width: 44px;
+    height: 44px;
+    background: #1e293b;
+    border-radius: 50%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    cursor: pointer;
+    box-shadow: 0 4px 12px rgba(0,0,0,0.2);
+    z-index: 99998;
+    transition: transform 0.2s;
+}
+
+#orgapress-privacy-trigger:hover {
+    transform: scale(1.1);
+}
+
+#orgapress-privacy-trigger svg {
+    width: 24px;
+    height: 24px;
+    fill: #fff;
+}
+
+.orgapress-consent-box h2 {
+    margin: 0 0 16px 0;
+    font-size: 26px;
+    font-weight: 800;
+    color: #0f172a;
+    letter-spacing: -0.025em;
+}
+
+.orgapress-consent-box p {
+    margin: 0 0 32px 0;
+    font-size: 15px;
+    line-height: 1.6;
+    color: #475569;
+}
+
+.orgapress-consent-form {
+    border-top: 1px solid #f1f5f9;
+    border-bottom: 1px solid #f1f5f9;
+    padding: 24px 0;
+    margin-bottom: 32px;
+}
+
+.orgapress-consent-row {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 12px 0;
+}
+
+.orgapress-consent-label-title {
+    font-weight: 700;
+    font-size: 16px;
+    color: #1e293b;
+}
+
+.orgapress-consent-actions {
+    display: flex;
+    gap: 16px;
+    justify-content: flex-end;
+}
+
+.orgapress-consent-actions button {
+    padding: 12px 24px;
+    font-size: 15px;
+    font-weight: 700;
+    border-radius: 8px;
+    cursor: pointer;
+    transition: all 0.2s cubic-bezier(0.4, 0, 0.2, 1);
+    border: 1px solid transparent;
+}
+
+#orgapress-consent-accept-all,
+.orgapress-btn-primary {
+    background: #1e293b;
+    color: #ffffff !important;
+    flex: 1;
+}
+
+#orgapress-consent-accept-all:hover,
+.orgapress-btn-primary:hover {
+    background: #0f172a;
+    transform: translateY(-1px);
+}
+
+.orgapress-btn-secondary {
+    background: #f1f5f9;
+    color: #475569 !important;
+    border: 1px solid #e2e8f0;
+}
+
+.orgapress-btn-secondary:hover {
+    background: #e2e8f0;
+}
+
+.orgapress-consent-save-selection {
+    background: #ffffff;
+    color: #64748b;
+    border-color: #e2e8f0;
+}
+
+.orgapress-consent-save-selection:hover {
+    background: #f8fafc;
+    border-color: #cbd5e1;
+}
+
+.orgapress-switch {
+    position: relative;
+    display: inline-block;
+    width: 52px;
+    height: 28px;
+}
+
+.orgapress-switch input {
+    opacity: 0;
+    width: 0;
+    height: 0;
+}
+
+.orgapress-slider {
+    position: absolute;
+    cursor: pointer;
+    inset: 0;
+    background-color: #e2e8f0;
+    transition: .3s;
+    border-radius: 30px;
+}
+
+.orgapress-slider:before {
+    position: absolute;
+    content: "";
+    height: 22px;
+    width: 22px;
+    left: 3px;
+    bottom: 3px;
+    background-color: white;
+    transition: .3s;
+    border-radius: 50%;
+    box-shadow: 0 1px 3px rgba(0,0,0,0.1);
+}
+
+input:checked + .orgapress-slider {
+    background-color: #10b981;
+}
+
+input:checked + .orgapress-slider:before {
+    transform: translateX(24px);
+}
+
+input:disabled + .orgapress-slider {
+    background-color: #cbd5e1;
+    cursor: not-allowed;
+    opacity: 0.6;
+}
