@@ -64,4 +64,4 @@ This plugin serves as the "Lite" version of the OrgaPress Enterprise Framework, 
 This project is licensed under the GPLv2 or later.
 
 ---
-OrgaPress ([orgapress.com](https://orgapress.com)) is developed by **RheinMainTech GmbH** ([rheinmaintech.com](https://rheinmaintech.com)).
+OrgaPress ([www.orgapress.com](https://orgapress.com)) is developed by **RheinMainTech GmbH** ([www.rheinmaintech.com](https://rheinmaintech.com)).
