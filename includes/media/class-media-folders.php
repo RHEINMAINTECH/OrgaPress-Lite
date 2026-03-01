@@ -9,7 +9,7 @@ class MediaFolders
 {
 const TAXONOMY = 'orgapress_media_folder';
 const CAPABILITY = 'upload_files';
-const DEFAULT_FOLDERS = ['Marketing', 'Intern', 'Presse'];
+const DEFAULT_FOLDERS = ['Marketing', 'Internal', 'Press'];
 
 public static function init(): void
 {
@@ -48,8 +48,8 @@ public static function register_taxonomy(): void
         'attachment',
         [
             'labels' => [
-                'name' => __('Medienordner', 'orgapress-lite'),
-                'singular_name' => __('Medienordner', 'orgapress-lite'),
+                'name' => __('Media Folders', 'orgapress-lite'),
+                'singular_name' => __('Media Folder', 'orgapress-lite'),
             ],
             'hierarchical' => true,
             'public' => false,
@@ -116,6 +116,10 @@ public static function enqueue_assets(): void
         'OrgaPressMedia',
         [
             'taxonomy' => self::TAXONOMY,
+            'labels'   => [
+                'all_folders' => __('All Folders', 'orgapress-lite'),
+                'media_folders' => __('Media Folders', 'orgapress-lite'),
+            ]
         ]
     );
 }
@@ -153,12 +157,12 @@ public static function attachment_field(array $fields, \WP_Post $post): array
         'hide_empty' => false,
         'name' => self::TAXONOMY,
         'selected' => $current,
-        'show_option_none' => __('Kein Ordner', 'orgapress-lite'),
+        'show_option_none' => __('No Folder', 'orgapress-lite'),
         'echo' => false,
     ]);
 
     $fields[self::TAXONOMY] = [
-        'label' => __('Medienordner', 'orgapress-lite'),
+        'label' => __('Media Folder', 'orgapress-lite'),
         'input' => 'html',
         'html'  => $dropdown,
     ];
@@ -186,7 +190,7 @@ public static function save_attachment_field(array $post, array $attachment): ar
 
 public static function register_bulk_action(array $actions): array
 {
-    $actions['orgapress_assign_folder'] = __('Medienordner zuweisen', 'orgapress-lite');
+    $actions['orgapress_assign_folder'] = __('Assign Media Folder', 'orgapress-lite');
     return $actions;
 }
 

@@ -44,12 +44,12 @@ public static function render_page(): void
 {
     ?>
     <div class="wrap">
-        <h1><?php esc_html_e('Cookie Banner Einstellungen', 'orgapress-lite'); ?></h1>
+        <h1><?php esc_html_e('Cookie Banner Settings', 'orgapress-lite'); ?></h1>
         <form method="post" action="options.php">
             <?php settings_fields(self::OPTION_GROUP); ?>
             <table class="form-table" role="presentation">
                 <tr>
-                    <th scope="row"><?php esc_html_e('Aktiviert', 'orgapress-lite'); ?></th>
+                    <th scope="row"><?php esc_html_e('Enabled', 'orgapress-lite'); ?></th>
                     <td>
                         <input type="checkbox" name="<?php echo esc_attr(self::OPTION_ENABLED); ?>" value="1" <?php checked(get_option(self::OPTION_ENABLED, 1), 1); ?>>
                     </td>
@@ -57,13 +57,13 @@ public static function render_page(): void
                 <tr>
                     <th scope="row"><?php esc_html_e('Banner Text', 'orgapress-lite'); ?></th>
                     <td>
-                        <input type="text" class="regular-text" name="<?php echo esc_attr(self::OPTION_TEXT); ?>" value="<?php echo esc_attr(get_option(self::OPTION_TEXT, __('Diese Website verwendet Cookies gemäß DSGVO.', 'orgapress-lite'))); ?>">
+                        <input type="text" class="regular-text" name="<?php echo esc_attr(self::OPTION_TEXT); ?>" value="<?php echo esc_attr(get_option(self::OPTION_TEXT, __('This website uses cookies according to GDPR.', 'orgapress-lite'))); ?>">
                     </td>
                 </tr>
                 <tr>
                     <th scope="row"><?php esc_html_e('Button Text', 'orgapress-lite'); ?></th>
                     <td>
-                        <input type="text" class="regular-text" name="<?php echo esc_attr(self::OPTION_BUTTON); ?>" value="<?php echo esc_attr(get_option(self::OPTION_BUTTON, __('Akzeptieren', 'orgapress-lite'))); ?>">
+                        <input type="text" class="regular-text" name="<?php echo esc_attr(self::OPTION_BUTTON); ?>" value="<?php echo esc_attr(get_option(self::OPTION_BUTTON, __('Accept', 'orgapress-lite'))); ?>">
                     </td>
                 </tr>
                 <tr>
@@ -71,8 +71,8 @@ public static function render_page(): void
                     <td>
                         <?php $pos = get_option(self::OPTION_POSITION, 'bottom'); ?>
                         <select name="<?php echo esc_attr(self::OPTION_POSITION); ?>">
-                            <option value="bottom" <?php selected($pos, 'bottom'); ?>><?php esc_html_e('Unten', 'orgapress-lite'); ?></option>
-                            <option value="top" <?php selected($pos, 'top'); ?>><?php esc_html_e('Oben', 'orgapress-lite'); ?></option>
+                            <option value="bottom" <?php selected($pos, 'bottom'); ?>><?php esc_html_e('Bottom', 'orgapress-lite'); ?></option>
+                            <option value="top" <?php selected($pos, 'top'); ?>><?php esc_html_e('Top', 'orgapress-lite'); ?></option>
                         </select>
                     </td>
                 </tr>

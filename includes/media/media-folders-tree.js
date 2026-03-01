@@ -22,7 +22,7 @@ const FolderTree = wp.media.View.extend({
     render: function () {
         const self = this;
         this.$el.empty();
-        this.$el.append('<h3>' + wp.i18n.__('Medienordner', 'orgapress-lite') + '</h3>');
+        this.$el.append('<h3>' + OrgaPressMedia.labels.media_folders + '</h3>');
         const ul = $('<ul class="orgapress-folder-tree"></ul>');
 
         this.terms.forEach(function (term) {

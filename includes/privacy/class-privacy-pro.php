@@ -40,11 +40,11 @@ public static function register_settings(): void
     if (!get_option(self::OPTION_CATEGORIES)) {
         update_option(self::OPTION_CATEGORIES, [
             'essential' => [
-                'label' => __('Essenziell', 'orgapress-lite'),
+                'label' => __('Essential', 'orgapress-lite'),
                 'required' => true,
             ],
             'analytics' => [
-                'label' => __('Statistik', 'orgapress-lite'),
+                'label' => __('Analytics', 'orgapress-lite'),
                 'required' => false,
             ],
             'marketing' => [
@@ -180,6 +180,14 @@ public static function enqueue_frontend(): void
             'cookie'     => self::COOKIE_NAME,
             'categories' => self::get_categories(),
             'services'   => self::get_services(),
+            'labels'     => [
+                'banner_text' => __('We use cookies to improve your experience. By clicking "Accept All", you consent to the use of ALL cookies. However, you may visit "Settings" to provide a controlled consent.', 'orgapress-lite'),
+                'settings' => __('Settings', 'orgapress-lite'),
+                'accept_all' => __('Accept All', 'orgapress-lite'),
+                'privacy_settings' => __('Privacy Settings', 'orgapress-lite'),
+                'modal_desc' => __('Choose which cookies you want to allow. Essential cookies are technically necessary for the operation of the website.', 'orgapress-lite'),
+                'save_selection' => __('Save Selection', 'orgapress-lite'),
+            ]
         ]
     );
 }

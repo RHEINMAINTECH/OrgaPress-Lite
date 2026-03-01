@@ -1,0 +1,322 @@
+msgid ""
+msgstr ""
+"Project-Id-Version: OrgaPress Lite 1.0.0\n"
+"Report-Msgid-Bugs-To: \n"
+"POT-Creation-Date: 2026-03-01 15:00+0100\n"
+"PO-Revision-Date: 2026-03-01 15:10+0100\n"
+"Last-Translator: OrgaPress Team\n"
+"Language-Team: German\n"
+"Language: de_DE\n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=UTF-8\n"
+"Content-Transfer-Encoding: 8bit\n"
+"X-Generator: Poedit 3.0\n"
+
+#: includes/admin/class-menu.php
+msgid "OrgaPress Lite"
+msgstr "OrgaPress Lite"
+
+msgid "Dashboard"
+msgstr "Dashboard"
+
+msgid "Welcome to OrgaPress Lite"
+msgstr "Willkommen bei OrgaPress Lite"
+
+msgid "The central command center for your website security, privacy, and performance."
+msgstr "Die zentrale Schaltzentrale für deine Website-Sicherheit, Datenschutz und Performance."
+
+msgid "SMTP Delivery"
+msgstr "SMTP Versand"
+
+msgid "Configure reliable email delivery via SMTP to ensure your messages arrive safely."
+msgstr "Konfiguriere einen zuverlässigen E-Mail-Versand über SMTP, um sicherzustellen, dass deine Nachrichten ankommen."
+
+msgid "Configure"
+msgstr "Konfigurieren"
+
+msgid "Cookie Banner"
+msgstr "Cookie Banner"
+
+msgid "Customize the appearance and text of your GDPR-compliant cookie banner."
+msgstr "Passe das Erscheinungsbild und die Texte deines DSGVO-konformen Cookie-Banners an."
+
+msgid "Customize"
+msgstr "Anpassen"
+
+msgid "Security"
+msgstr "Sicherheit"
+
+msgid "Protect your WordPress instance from attacks, disable XML-RPC, and hide version strings."
+msgstr "Schütze deine WordPress-Instanz vor Angriffen, deaktiviere XML-RPC und verberge Versionsangaben."
+
+msgid "Verify"
+msgstr "Prüfen"
+
+msgid "Themify Builder"
+msgstr "Themify Builder"
+
+msgid "Active"
+msgstr "Aktiv"
+
+msgid "Inactive"
+msgstr "Inaktiv"
+
+msgid "The Themify Builder serves as an intuitive frontend editor for your pages, enabling complex design without code."
+msgstr "Der Themify Builder dient als intuitiver Frontend-Editor für deine Seiten und ermöglicht komplexes Design ohne Code."
+
+msgid "Already Active"
+msgstr "Bereits Aktiv"
+
+msgid "Activate"
+msgstr "Aktivieren"
+
+msgid "Install"
+msgstr "Installieren"
+
+msgid "Themify Settings"
+msgstr "Themify Einstellungen"
+
+msgid "Configure global settings, tools, and performance options for the Themify Builder."
+msgstr "Konfiguriere die globalen Einstellungen, Werkzeuge und Performance-Optionen des Themify Builders."
+
+msgid "Open Builder Settings"
+msgstr "Builder-Einstellungen öffnen"
+
+msgid "Quick Start Guide"
+msgstr "Schnellstartanleitung"
+
+msgid "Learn in a few minutes how to get the best out of OrgaPress Lite and the integrated Themify Builder."
+msgstr "Erfahre in wenigen Minuten, wie du das Beste aus OrgaPress Lite und dem integrierten Themify Builder herausholst."
+
+msgid "Open Guide"
+msgstr "Anleitung öffnen"
+
+msgid "OrgaPress Lite Quick Start Guide"
+msgstr "Schnellstartanleitung OrgaPress Lite"
+
+msgid "What does OrgaPress Lite do?"
+msgstr "Was macht OrgaPress Lite?"
+
+msgid "OrgaPress Lite is the foundation of your website. It bundles essential features in one lightweight plugin:"
+msgstr "OrgaPress Lite ist das Fundament deiner Website. Es bündelt essenzielle Funktionen in einem schlanken Plugin:"
+
+msgid "Secure email delivery, ensuring your form emails do not end up in spam."
+msgstr "Sicherer E-Mail-Versand, damit deine Formular-Mails nicht im Spam landen."
+
+msgid "A smart cookie banner with an audit log for legal compliance."
+msgstr "Ein intelligenter Cookie-Banner mit Audit-Log für rechtliche Sicherheit."
+
+msgid "Protection against brute force by securing the REST API and disabling XML-RPC."
+msgstr "Schutz vor Brute-Force durch Absicherung der REST-API und Deaktivierung von XML-RPC."
+
+msgid "Meta tags and title optimization directly within every post."
+msgstr "Meta-Tags und Titel-Optimierung direkt in jedem Beitrag."
+
+msgid "Why Themify Integration?"
+msgstr "Warum Themify Integration?"
+
+msgid "We integrated the Themify Builder because it offers the perfect balance between design freedom and technical performance. It replaces the standard Gutenberg editor with a more powerful system that guarantees layout consistency across the entire OrgaPress infrastructure."
+msgstr "Wir haben den Themify Builder integriert, weil er das perfekte Gleichgewicht zwischen Design-Freiheit und technischer Performance bietet. Er ersetzt den Standard-Gutenberg-Editor durch ein leistungsfähigeres System, das Layout-Konsistenz über die gesamte OrgaPress-Infrastruktur hinweg garantiert."
+
+msgid "How to Use the Builder"
+msgstr "So nutzt du den Builder"
+
+msgid "Backend Mode:"
+msgstr "Backend-Modus:"
+
+msgid "You will find the Builder area below the classic editor. Here you can move modules via drag & drop and design the structure of your page."
+msgstr "Unter dem klassischen Editor findest du den Builder-Bereich. Hier kannst du Module per Drag & Drop verschieben und die Struktur deiner Seite gestalten."
+
+msgid "Frontend Mode:"
+msgstr "Frontend-Modus:"
+
+msgid "Visit the page on your website and click \"Turn On Builder\" in the black admin bar at the top. You can now edit text and images visually."
+msgstr "Besuche die Seite auf deiner Website und klicke in der schwarzen Admin-Bar oben auf \"Turn On Builder\". Nun kannst du Texte und Bilder direkt visuell bearbeiten."
+
+msgid "Got it"
+msgstr "Verstanden"
+
+#: includes/media/class-media-folders.php
+msgid "Media Folders"
+msgstr "Medienordner"
+
+msgid "Media Folder"
+msgstr "Medienordner"
+
+msgid "Marketing"
+msgstr "Marketing"
+
+msgid "Internal"
+msgstr "Intern"
+
+msgid "Press"
+msgstr "Presse"
+
+msgid "All Folders"
+msgstr "Alle Ordner"
+
+msgid "No Folder"
+msgstr "Kein Ordner"
+
+msgid "Assign Media Folder"
+msgstr "Medienordner zuweisen"
+
+#: includes/privacy/class-cookie-banner.php
+msgid "Cookie Banner Settings"
+msgstr "Cookie Banner Einstellungen"
+
+msgid "Enabled"
+msgstr "Aktiviert"
+
+msgid "Banner Text"
+msgstr "Banner Text"
+
+msgid "This website uses cookies according to GDPR."
+msgstr "Diese Website verwendet Cookies gemäß DSGVO."
+
+msgid "Button Text"
+msgstr "Button Text"
+
+msgid "Accept"
+msgstr "Akzeptieren"
+
+msgid "Position"
+msgstr "Position"
+
+msgid "Bottom"
+msgstr "Unten"
+
+msgid "Top"
+msgstr "Oben"
+
+#: includes/privacy/class-privacy-pro.php
+msgid "Privacy Pro"
+msgstr "Privacy Pro"
+
+msgid "Essential"
+msgstr "Essenziell"
+
+msgid "Analytics"
+msgstr "Statistik"
+
+msgid "Privacy Pro – Services"
+msgstr "Privacy Pro – Services"
+
+msgid "Enterprise-DSGVO: Categories, Services, Providers & Script Handles."
+msgstr "Enterprise-DSGVO: Kategorien, Services, Provider & Script-Handles."
+
+msgid "Service Key"
+msgstr "Service Key"
+
+msgid "Label"
+msgstr "Label"
+
+msgid "Category"
+msgstr "Kategorie"
+
+msgid "Provider / Info URL"
+msgstr "Provider / Info URL"
+
+msgid "Script Handles"
+msgstr "Script Handles"
+
+msgid "Developers can extend services & categories via filter."
+msgstr "Entwickler können Services & Kategorien per Filter erweitern."
+
+msgid "We use cookies to improve your experience. By clicking \"Accept All\", you consent to the use of ALL cookies. However, you may visit \"Settings\" to provide a controlled consent."
+msgstr "Wir verwenden Cookies, um deine Erfahrung zu verbessern. Durch Klicken auf \"Alle akzeptieren\" stimmst du der Verwendung ALLER Cookies zu. Du kannst jedoch die \"Einstellungen\" besuchen, um eine kontrollierte Zustimmung zu erteilen."
+
+msgid "Settings"
+msgstr "Einstellungen"
+
+msgid "Accept All"
+msgstr "Alle akzeptieren"
+
+msgid "Privacy Settings"
+msgstr "Datenschutz-Einstellungen"
+
+msgid "Choose which cookies you want to allow. Essential cookies are technically necessary for the operation of the website."
+msgstr "Wähle aus, welche Cookies du zulassen möchtest. Essenzielle Cookies sind für den Betrieb der Website technisch notwendig."
+
+msgid "Save Selection"
+msgstr "Auswahl speichern"
+
+#: includes/privacy/class-privacy-audit-viewer.php
+msgid "Consent Audit Log"
+msgstr "Consent Audit Log"
+
+msgid "GDPR-compliant proof of all consent changes (hash-based)."
+msgstr "DSGVO-konformer Nachweis aller Consent-Änderungen (hash-basiert)."
+
+msgid "Export CSV"
+msgstr "CSV exportieren"
+
+msgid "Timestamp"
+msgstr "Zeitpunkt"
+
+msgid "Consent (JSON)"
+msgstr "Consent (JSON)"
+
+msgid "IP Hash"
+msgstr "IP-Hash"
+
+msgid "User Agent Hash"
+msgstr "User-Agent-Hash"
+
+msgid "No entries found."
+msgstr "Keine Einträge vorhanden."
+
+#: includes/settings/class-smtp.php
+msgid "SMTP Settings"
+msgstr "SMTP Einstellungen"
+
+msgid "Test email sent successfully!"
+msgstr "Test-E-Mail erfolgreich versendet!"
+
+msgid "Sending failed. Please check the log files."
+msgstr "Versand fehlgeschlagen. Bitte prüfe die Log-Files."
+
+msgid "Username"
+msgstr "Benutzername"
+
+msgid "Password"
+msgstr "Passwort"
+
+msgid "Encryption"
+msgstr "Verschlüsselung"
+
+msgid "SMTP Test Mail"
+msgstr "SMTP Test-Versand"
+
+msgid "Recipient Email"
+msgstr "Empfänger E-Mail"
+
+msgid "Send Test Email"
+msgstr "Test-E-Mail senden"
+
+#: includes/security/class-security.php
+msgid "Security Settings"
+msgstr "Security Einstellungen"
+
+msgid "Disable XML-RPC"
+msgstr "XML-RPC deaktivieren"
+
+msgid "Hide WordPress Version"
+msgstr "WordPress Version verbergen"
+
+msgid "Protect REST API User Endpoint"
+msgstr "REST API Benutzer-Endpunkt schützen"
+
+#: includes/seo/class-seo.php
+msgid "SEO Settings"
+msgstr "SEO Einstellungen"
+
+msgid "Meta Title"
+msgstr "Meta Title"
+
+msgid "Meta Description"
+msgstr "Meta Description"
+
+#: includes/roles/class-roles.php
+msgid "OrgaPress Manager"
+msgstr "OrgaPress Manager"

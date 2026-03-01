@@ -30,12 +30,12 @@ class Core
 
     private static function load_textdomain(): void
     {
-    load_plugin_textdomain(
-        'orgapress-lite',
-        false,
-        dirname(plugin_basename(__FILE__), 2) . '/languages'
-    );
-}
+        load_plugin_textdomain(
+            'orgapress-lite',
+            false,
+            dirname(plugin_basename(__FILE__), 2) . '/languages'
+        );
+    }
 
 private static function includes(): void
 {

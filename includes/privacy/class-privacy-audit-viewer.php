@@ -86,21 +86,21 @@ public static function render(): void
     ?>
     <div class="wrap">
         <h1><?php esc_html_e('Consent Audit Log', 'orgapress-lite'); ?></h1>
-        <p><?php esc_html_e('DSGVO-konformer Nachweis aller Consent-Änderungen (hash-basiert).', 'orgapress-lite'); ?></p>
+        <p><?php esc_html_e('GDPR-compliant proof of all consent changes (hash-based).', 'orgapress-lite'); ?></p>
 
         <p>
             <a href="<?php echo esc_url($export_url); ?>" class="button button-secondary">
-                <?php esc_html_e('CSV exportieren', 'orgapress-lite'); ?>
+                <?php esc_html_e('Export CSV', 'orgapress-lite'); ?>
             </a>
         </p>
 
         <table class="widefat striped">
             <thead>
                 <tr>
-                    <th><?php esc_html_e('Zeitpunkt', 'orgapress-lite'); ?></th>
+                    <th><?php esc_html_e('Timestamp', 'orgapress-lite'); ?></th>
                     <th><?php esc_html_e('Consent (JSON)', 'orgapress-lite'); ?></th>
-                    <th><?php esc_html_e('IP-Hash', 'orgapress-lite'); ?></th>
-                    <th><?php esc_html_e('User-Agent-Hash', 'orgapress-lite'); ?></th>
+                    <th><?php esc_html_e('IP Hash', 'orgapress-lite'); ?></th>
+                    <th><?php esc_html_e('User Agent Hash', 'orgapress-lite'); ?></th>
                 </tr>
             </thead>
             <tbody>
@@ -115,7 +115,7 @@ public static function render(): void
                     <?php endforeach; ?>
                 <?php else : ?>
                     <tr>
-                        <td colspan="4"><?php esc_html_e('Keine Einträge vorhanden.', 'orgapress-lite'); ?></td>
+                        <td colspan="4"><?php esc_html_e('No entries found.', 'orgapress-lite'); ?></td>
                     </tr>
                 <?php endif; ?>
             </tbody>

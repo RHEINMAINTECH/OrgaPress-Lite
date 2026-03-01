@@ -34,32 +34,31 @@ function setConsent(state) {
 }
 
 function buildModal() {
-    // Banner Erstellen
+    const labels = OrgaPressPrivacy.labels;
+    // Banner Creation
     const banner = document.createElement('div');
     banner.id = 'orgapress-consent-banner';
     banner.innerHTML = `
-        <div class="orgapress-consent-banner-text">
-            Wir verwenden Cookies, um Ihre Erfahrung zu verbessern. Durch Klicken auf "Alle akzeptieren" stimmen Sie der Verwendung ALLER Cookies zu. Sie können jedoch die "Einstellungen" besuchen, um eine kontrollierte Zustimmung zu erteilen.
-        </div>
+        <div class="orgapress-consent-banner-text">${labels.banner_text}</div>
         <div class="orgapress-consent-banner-actions">
-            <button type="button" class="orgapress-btn-secondary" id="orgapress-open-settings">Einstellungen</button>
-            <button type="button" class="orgapress-btn-primary" id="orgapress-banner-accept-all">Alle akzeptieren</button>
+            <button type="button" class="orgapress-btn-secondary" id="orgapress-open-settings">${labels.settings}</button>
+            <button type="button" class="orgapress-btn-primary" id="orgapress-banner-accept-all">${labels.accept_all}</button>
         </div>
     `;
     document.body.appendChild(banner);
 
-    // Modal Erstellen
+    // Modal Creation
     const modal = document.createElement('div');
     modal.id = 'orgapress-consent-modal';
     modal.innerHTML = `
         <div class="orgapress-consent-backdrop"></div>
         <div class="orgapress-consent-box">
-            <h2>Datenschutz-Einstellungen</h2>
-            <p>Wählen Sie aus, welche Cookies Sie zulassen möchten. Essenzielle Cookies sind für den Betrieb der Website technisch notwendig.</p>
+            <h2>${labels.privacy_settings}</h2>
+            <p>${labels.modal_desc}</p>
             <form id="orgapress-consent-form" class="orgapress-consent-form"></form>
             <div class="orgapress-consent-actions">
-                <button type="submit" form="orgapress-consent-form" class="orgapress-consent-save-selection">Auswahl speichern</button>
-                <button type="button" id="orgapress-consent-accept-all">Alle akzeptieren</button>
+                <button type="submit" form="orgapress-consent-form" class="orgapress-consent-save-selection">${labels.save_selection}</button>
+                <button type="button" id="orgapress-consent-accept-all">${labels.accept_all}</button>
             </div>
         </div>
     `;

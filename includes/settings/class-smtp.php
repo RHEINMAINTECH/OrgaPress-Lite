@@ -36,7 +36,7 @@ public static function handle_test_mail(): void
     add_settings_error(
         'orgapress_smtp',
         'smtp_test',
-        $sent ? __('Test-E-Mail erfolgreich versendet!', 'orgapress-lite') : __('Versand fehlgeschlagen. Prüfen Sie die Log-Files.', 'orgapress-lite'),
+        $sent ? __('Test email sent successfully!', 'orgapress-lite') : __('Sending failed. Please check the log files.', 'orgapress-lite'),
         $sent ? 'updated' : 'error'
     );
 }
@@ -79,15 +79,15 @@ public static function render_page(): void
                     <td><input type="number" name="orgapress_smtp_port" value="<?php echo esc_attr(get_option('orgapress_smtp_port', 587)); ?>"></td>
                 </tr>
                 <tr>
-                    <th scope="row">Benutzer</th>
+                    <th scope="row"><?php esc_html_e('Username', 'orgapress-lite'); ?></th>
                     <td><input type="text" name="orgapress_smtp_user" value="<?php echo esc_attr(get_option('orgapress_smtp_user')); ?>" class="regular-text"></td>
                 </tr>
                 <tr>
-                    <th scope="row">Passwort</th>
+                    <th scope="row"><?php esc_html_e('Password', 'orgapress-lite'); ?></th>
                     <td><input type="password" name="orgapress_smtp_pass" value="<?php echo esc_attr(get_option('orgapress_smtp_pass')); ?>" class="regular-text"></td>
                 </tr>
                 <tr>
-                    <th scope="row">Verschlüsselung</th>
+                    <th scope="row"><?php esc_html_e('Encryption', 'orgapress-lite'); ?></th>
                     <td>
                         <select name="orgapress_smtp_secure">
                             <?php $val = get_option('orgapress_smtp_secure', 'tls'); ?>

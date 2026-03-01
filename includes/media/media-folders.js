@@ -12,7 +12,7 @@ const TaxonomyFilter = wp.media.View.extend({
     render: function () {
         const self = this;
         this.$el.empty();
-        this.$el.append('<option value="">' + wp.i18n.__('Alle Ordner', 'orgapress-lite') + '</option>');
+        this.$el.append('<option value="">' + OrgaPressMedia.labels.all_folders + '</option>');
 
         wp.ajax.post('get_terms', {
             taxonomy: OrgaPressMedia.taxonomy,

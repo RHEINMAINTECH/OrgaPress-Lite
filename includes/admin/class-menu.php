@@ -82,44 +82,44 @@ class Menu
         </style>
         <div class="wrap orgapress-dashboard">
             <div class="orgapress-header">
-                <h2><?php esc_html_e('Willkommen bei OrgaPress Lite', 'orgapress-lite'); ?></h2>
-                <p><?php esc_html_e('Die zentrale Schaltzentrale für Ihre Website-Sicherheit, Datenschutz und Performance.', 'orgapress-lite'); ?></p>
+                <h2><?php esc_html_e('Welcome to OrgaPress Lite', 'orgapress-lite'); ?></h2>
+                <p><?php esc_html_e('The central command center for your website security, privacy, and performance.', 'orgapress-lite'); ?></p>
             </div>
 
             <div class="orgapress-grid">
                 <div class="orgapress-card">
-                    <h3><span class="dashicons dashicons-email-alt"></span> <?php esc_html_e('SMTP Versand', 'orgapress-lite'); ?></h3>
-                    <p><?php esc_html_e('Konfigurieren Sie einen zuverlässigen E-Mail-Versand über SMTP, um sicherzustellen, dass Ihre Nachrichten ankommen.', 'orgapress-lite'); ?></p>
-                    <a href="<?php echo esc_url(admin_url('admin.php?page=orgapress-smtp')); ?>" class="button button-primary"><?php esc_html_e('Konfigurieren', 'orgapress-lite'); ?></a>
+                    <h3><span class="dashicons dashicons-email-alt"></span> <?php esc_html_e('SMTP Delivery', 'orgapress-lite'); ?></h3>
+                    <p><?php esc_html_e('Configure reliable email delivery via SMTP to ensure your messages arrive safely.', 'orgapress-lite'); ?></p>
+                    <a href="<?php echo esc_url(admin_url('admin.php?page=orgapress-smtp')); ?>" class="button button-primary"><?php esc_html_e('Configure', 'orgapress-lite'); ?></a>
                 </div>
 
                 <div class="orgapress-card">
                     <h3><span class="dashicons dashicons-lock"></span> <?php esc_html_e('Cookie Banner', 'orgapress-lite'); ?></h3>
-                    <p><?php esc_html_e('Passen Sie das Erscheinungsbild und die Texte Ihres DSGVO-konformen Cookie-Banners an.', 'orgapress-lite'); ?></p>
-                    <a href="<?php echo esc_url(admin_url('admin.php?page=orgapress-cookie')); ?>" class="button button-primary"><?php esc_html_e('Anpassen', 'orgapress-lite'); ?></a>
+                    <p><?php esc_html_e('Customize the appearance and text of your GDPR-compliant cookie banner.', 'orgapress-lite'); ?></p>
+                    <a href="<?php echo esc_url(admin_url('admin.php?page=orgapress-cookie')); ?>" class="button button-primary"><?php esc_html_e('Customize', 'orgapress-lite'); ?></a>
                 </div>
 
                 <div class="orgapress-card">
-                    <h3><span class="dashicons dashicons-shield"></span> <?php esc_html_e('Sicherheit', 'orgapress-lite'); ?></h3>
-                    <p><?php esc_html_e('Schützen Sie Ihre WordPress-Instanz vor Angriffen, deaktivieren Sie XML-RPC und verbergen Sie Versionen.', 'orgapress-lite'); ?></p>
-                    <a href="<?php echo esc_url(admin_url('admin.php?page=orgapress-security')); ?>" class="button button-primary"><?php esc_html_e('Prüfen', 'orgapress-lite'); ?></a>
+                    <h3><span class="dashicons dashicons-shield"></span> <?php esc_html_e('Security', 'orgapress-lite'); ?></h3>
+                    <p><?php esc_html_e('Protect your WordPress instance from attacks, disable XML-RPC, and hide version strings.', 'orgapress-lite'); ?></p>
+                    <a href="<?php echo esc_url(admin_url('admin.php?page=orgapress-security')); ?>" class="button button-primary"><?php esc_html_e('Verify', 'orgapress-lite'); ?></a>
                 </div>
 
                 <div class="orgapress-card">
                     <h3>
                         <span class="dashicons dashicons-layout"></span> <?php esc_html_e('Themify Builder', 'orgapress-lite'); ?>
                         <?php if ($themify_status === 'active'): ?>
-                            <span class="status-tag status-active">Aktiv</span>
+                            <span class="status-tag status-active"><?php esc_html_e('Active', 'orgapress-lite'); ?></span>
                         <?php else: ?>
-                            <span class="status-tag status-missing">Inaktiv</span>
+                            <span class="status-tag status-missing"><?php esc_html_e('Inactive', 'orgapress-lite'); ?></span>
                         <?php endif; ?>
                     </h3>
-                    <p><?php esc_html_e('Der Themify Builder dient als intuitiver Frontend-Editor für Ihre Seiten und ermöglicht komplexes Design ohne Code.', 'orgapress-lite'); ?></p>
+                    <p><?php esc_html_e('The Themify Builder serves as an intuitive frontend editor for your pages, enabling complex design without code.', 'orgapress-lite'); ?></p>
                     <?php if ($themify_status === 'active'): ?>
-                        <button class="button disabled" disabled><?php esc_html_e('Bereits Aktiv', 'orgapress-lite'); ?></button>
+                        <button class="button disabled" disabled><?php esc_html_e('Already Active', 'orgapress-lite'); ?></button>
                     <?php else: ?>
                         <?php 
-                        $label = ($themify_status === 'installed') ? __('Aktivieren', 'orgapress-lite') : __('Installieren', 'orgapress-lite');
+                        $label = ($themify_status === 'installed') ? __('Activate', 'orgapress-lite') : __('Install', 'orgapress-lite');
                         $url = wp_nonce_url(admin_url('admin.php?page=orgapress-lite&action=orgapress_install_themify'), 'orgapress_themify_action');
                         ?>
                         <a href="<?php echo esc_url($url); ?>" class="button button-primary"><?php echo esc_html($label); ?></a>
@@ -127,47 +127,47 @@ class Menu
                 </div>
 
                 <div class="orgapress-card">
-                    <h3><span class="dashicons dashicons-admin-settings"></span> <?php esc_html_e('Themify Einstellungen', 'orgapress-lite'); ?></h3>
-                    <p><?php esc_html_e('Konfigurieren Sie die globalen Einstellungen, Werkzeuge und Performance-Optionen des Themify Builders.', 'orgapress-lite'); ?></p>
-                    <a href="<?php echo esc_url(admin_url('admin.php?page=themify-builder')); ?>" class="button button-secondary"><?php esc_html_e('Builder-Settings öffnen', 'orgapress-lite'); ?></a>
+                    <h3><span class="dashicons dashicons-admin-settings"></span> <?php esc_html_e('Themify Settings', 'orgapress-lite'); ?></h3>
+                    <p><?php esc_html_e('Configure global settings, tools, and performance options for the Themify Builder.', 'orgapress-lite'); ?></p>
+                    <a href="<?php echo esc_url(admin_url('admin.php?page=themify-builder')); ?>" class="button button-secondary"><?php esc_html_e('Open Builder Settings', 'orgapress-lite'); ?></a>
                 </div>
 
                 <div class="orgapress-card">
-                    <h3><span class="dashicons dashicons-sos"></span> <?php esc_html_e('Schnellstartanleitung', 'orgapress-lite'); ?></h3>
-                    <p><?php esc_html_e('Erfahren Sie in wenigen Minuten, wie Sie das Beste aus OrgaPress Lite und dem integrierten Themify Builder herausholen.', 'orgapress-lite'); ?></p>
-                    <button id="op-open-guide" class="button button-secondary"><?php esc_html_e('Anleitung öffnen', 'orgapress-lite'); ?></button>
+                    <h3><span class="dashicons dashicons-sos"></span> <?php esc_html_e('Quick Start Guide', 'orgapress-lite'); ?></h3>
+                    <p><?php esc_html_e('Learn in a few minutes how to get the best out of OrgaPress Lite and the integrated Themify Builder.', 'orgapress-lite'); ?></p>
+                    <button id="op-open-guide" class="button button-secondary"><?php esc_html_e('Open Guide', 'orgapress-lite'); ?></button>
                 </div>
             </div>
 
             <div id="op-guide-modal" class="op-modal">
                 <div class="op-modal-content">
                     <span class="op-modal-close" id="op-close-guide">&times;</span>
-                    <h2><?php esc_html_e('Schnellstartanleitung OrgaPress Lite', 'orgapress-lite'); ?></h2>
+                    <h2><?php esc_html_e('OrgaPress Lite Quick Start Guide', 'orgapress-lite'); ?></h2>
                     
                     <div class="op-guide-section">
-                        <h4><?php esc_html_e('Was macht OrgaPress Lite?', 'orgapress-lite'); ?></h4>
-                        <p><?php esc_html_e('OrgaPress Lite ist das Fundament Ihrer Website. Es bündelt essenzielle Funktionen in einem schlanken Plugin:', 'orgapress-lite'); ?></p>
+                        <h4><?php esc_html_e('What does OrgaPress Lite do?', 'orgapress-lite'); ?></h4>
+                        <p><?php esc_html_e('OrgaPress Lite is the foundation of your website. It bundles essential features in one lightweight plugin:', 'orgapress-lite'); ?></p>
                         <ul>
-                            <li><strong>SMTP:</strong> Sicherer E-Mail-Versand, damit Ihre Formular-Mails nicht im Spam landen.</li>
-                            <li><strong>DSGVO:</strong> Ein intelligenter Cookie-Banner mit Audit-Log für rechtliche Sicherheit.</li>
-                            <li><strong>Security:</strong> Schutz vor Brute-Force durch Absicherung der REST-API und Deaktivierung von XML-RPC.</li>
-                            <li><strong>SEO:</strong> Meta-Tags und Titel-Optimierung direkt in jedem Beitrag.</li>
+                            <li><strong>SMTP:</strong> <?php esc_html_e('Secure email delivery, ensuring your form emails do not end up in spam.', 'orgapress-lite'); ?></li>
+                            <li><strong>GDPR:</strong> <?php esc_html_e('A smart cookie banner with an audit log for legal compliance.', 'orgapress-lite'); ?></li>
+                            <li><strong>Security:</strong> <?php esc_html_e('Protection against brute force by securing the REST API and disabling XML-RPC.', 'orgapress-lite'); ?></li>
+                            <li><strong>SEO:</strong> <?php esc_html_e('Meta tags and title optimization directly within every post.', 'orgapress-lite'); ?></li>
                         </ul>
                     </div>
 
                     <div class="op-guide-section">
-                        <h4><?php esc_html_e('Warum Themify Integration?', 'orgapress-lite'); ?></h4>
-                        <p><?php esc_html_e('Wir haben den Themify Builder integriert, weil er das perfekte Gleichgewicht zwischen Design-Freiheit und technischer Performance bietet. Er ersetzt den Standard-Gutenberg-Editor durch ein leistungsfähigeres System, das Layout-Konsistenz über die gesamte OrgaPress-Infrastruktur hinweg garantiert.', 'orgapress-lite'); ?></p>
+                        <h4><?php esc_html_e('Why Themify Integration?', 'orgapress-lite'); ?></h4>
+                        <p><?php esc_html_e('We integrated the Themify Builder because it offers the perfect balance between design freedom and technical performance. It replaces the standard Gutenberg editor with a more powerful system that guarantees layout consistency across the entire OrgaPress infrastructure.', 'orgapress-lite'); ?></p>
                     </div>
 
                     <div class="op-guide-section">
-                        <h4><?php esc_html_e('So nutzen Sie den Builder', 'orgapress-lite'); ?></h4>
-                        <p><strong><?php esc_html_e('Backend-Modus:', 'orgapress-lite'); ?></strong> <?php esc_html_e('Unter dem klassischen Editor finden Sie den Builder-Bereich. Hier können Sie Module per Drag & Drop verschieben und die Struktur Ihrer Seite im Überblick gestalten.', 'orgapress-lite'); ?></p>
-                        <p><strong><?php esc_html_e('Frontend-Modus:', 'orgapress-lite'); ?></strong> <?php esc_html_e('Besuchen Sie die Seite auf Ihrer Website und klicken Sie in der schwarzen Admin-Bar oben auf "Turn On Builder". Nun können Sie Texte und Bilder direkt visuell bearbeiten.', 'orgapress-lite'); ?></p>
+                        <h4><?php esc_html_e('How to Use the Builder', 'orgapress-lite'); ?></h4>
+                        <p><strong><?php esc_html_e('Backend Mode:', 'orgapress-lite'); ?></strong> <?php esc_html_e('You will find the Builder area below the classic editor. Here you can move modules via drag & drop and design the structure of your page.', 'orgapress-lite'); ?></p>
+                        <p><strong><?php esc_html_e('Frontend Mode:', 'orgapress-lite'); ?></strong> <?php esc_html_e('Visit the page on your website and click "Turn On Builder" in the black admin bar at the top. You can now edit text and images visually.', 'orgapress-lite'); ?></p>
                     </div>
 
                     <div style="text-align: right; margin-top: 20px;">
-                        <button class="button button-primary" onclick="document.getElementById('op-guide-modal').style.display='none'"><?php esc_html_e('Verstanden', 'orgapress-lite'); ?></button>
+                        <button class="button button-primary" onclick="document.getElementById('op-guide-modal').style.display='none'"><?php esc_html_e('Got it', 'orgapress-lite'); ?></button>
                     </div>
                 </div>
             </div>
