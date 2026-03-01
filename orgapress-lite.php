@@ -2,7 +2,7 @@
 /**
  * Plugin Name: OrgaPress Lite
  * Description: Lite Version des OrgaPress Enterprise Frameworks – SMTP, DSGVO Cookie Banner, Rollen, SEO & Security Basics.
- * Version: 1.0.0
+ * Version: 1.0.1
  * Author: RheinMainTech GmbH
  * License: GPLv2 or later
  * Text Domain: orgapress-lite
@@ -23,4 +23,4 @@ register_activation_hook(__FILE__, [\OrgaPressLite\Core::class, 'activate']);
 
 add_action('plugins_loaded', function () {
 \OrgaPressLite\Core::init();
-});
+}); 
